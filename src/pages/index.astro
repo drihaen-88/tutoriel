@@ -1,6 +1,7 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
-
 ---
 
 <html lang="en">
@@ -11,10 +12,12 @@ import '../styles/global.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-    <a href="/">Accueil</a>
-     <a href="/blog/">Blog</a>
-    <a href="/about/">À propos</a>
+	<Header />
 	<body>
 		<h1>Mon site Astro</h1>
+		 <Footer />
+		   <script>
+    import "../scripts/menu.js";
+  </script>
 	</body>
 </html>
